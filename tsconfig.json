@@ -8,26 +8,31 @@
 		"baseUrl": "./src/client/app/",
 		"outDir": "./src/client/public/app/",
 		"sourceMap": true,
-		"module": "commonjs",
-		"target": "es5",
-		"jsx": "react",
+		"module": "ESNext",
+		"target": "ES2020",
+		"jsx": "react-jsx",
 		"allowJs": true,
 		"lib": [
-			"es6",
-			"dom",
-			"es2021"
+			"ES2020",
+			"DOM",
+			"DOM.Iterable"
 		],
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"rootDir": "src",
 		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
 		"noImplicitReturns": true,
 		"noImplicitThis": true,
 		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"noUnusedLocals": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"skipLibCheck": true
 	},
 	"include": [
-		"./src/client/app/**/*"
+		"./src/client/app/**/*",
+		"./vite.config.ts"
 	],
 	"exclude": [
 		"node_modules"

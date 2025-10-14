@@ -175,11 +175,11 @@ else
 	fi
 fi
 
-# Build webpack if needed
+# Build with Vite if needed
 if [ "$production" == "yes" ] || [ "$OED_PRODUCTION" == "yes" ]; then
-	npm run webpack:build
+	npm run build
 elif [ "$dostart" == "no" ]; then
-	npm run webpack
+	npm run build
 fi
 
 printf "%s\n" "OED install finished"

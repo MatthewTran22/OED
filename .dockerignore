@@ -9,3 +9,4 @@
 .env
 .git
 postgres-data
+node_modules
