@@ -64,6 +64,7 @@ services:
         # Using a volume allows autorebuild to work.
         volumes:
             - ./:/usr/src/app
+            - /usr/src/app/node_modules
         # Map the default port.
         ports:
             - "3000:3000" # Should be commented out if you uncomment 80:3000 below.
